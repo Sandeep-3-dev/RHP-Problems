@@ -13,9 +13,7 @@ int main() {
   sort(v.begin(),v.end(),greater<pair<int,int>>());
   int prev=0;
   vector<int> ht,time;
-  for(pair<int,int> p:v){
-    int a=p.first;
-    int b=p.second;
+  for(auto [a,b]:v){
     if(b>prev){
       prev=b;
       ht.push_back(a);
